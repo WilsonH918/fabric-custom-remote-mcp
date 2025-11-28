@@ -1,0 +1,30 @@
+{
+    "servers": {
+        "local-mcp-server": {
+            "type": "http",
+            "url": "http://localhost:7071/mcp"
+        },
+        "remote-mcp-remote-server": {
+            "type": "http",
+            "url": "https://func-mcp-7kvosbgryvaze.azurewebsites.net/mcp"
+        },
+        "func-mcp-7kvosbgryvaze-remote-server": {
+            "type": "http",
+            "url": "https://func-mcp-7kvosbgryvaze.azurewebsites.net/mcp",
+            "headers": {
+                "x-functions-key": "${input:func-mcp-7kvosbgryvazeMcpHostKey}"
+            }
+        }
+    },
+    "inputs": [
+        {
+            "type": "command",
+            "id": "func-mcp-7kvosbgryvazeMcpHostKey",
+            "command": "azureFunctions.getMcpHostKey",
+            "args": {
+                "resourceId": "/subscriptions/df643564-b686-4a24-b27c-45ebbc9c5a8a/resourceGroups/rg-remotemcpserver/providers/Microsoft.Web/sites/func-mcp-7kvosbgryvaze",
+                "projectType": "SelfHostedMcpServer"
+            }
+        }
+    ]
+}
