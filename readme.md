@@ -15,8 +15,6 @@ Project goal: expose Microsoft Fabric and Power BI operations to AI agents throu
 
 <img width="1460" height="710" alt="image" src="https://github.com/user-attachments/assets/c77e75cd-a298-4063-9bb9-aff88e2414e5" />
 
-Connections to annotate in the diagram:
-
 * MCP Host to Function App MCP endpoint: HTTPS MCP JSON RPC. Endpoint `/runtime/webhooks/mcp` or `/runtime/webhooks/mcp/sse`. Authentication Entra ID or a system key.
 * Function App MCP server to Fabric and Power BI: HTTPS REST OAuth Bearer. Methods GET POST PUT PATCH DELETE. Use On Behalf Of or a service principal.
 * Infra: Storage Account with Private Endpoint and VNet integration in the Flex plan. Key Vault with Managed Identity for secrets.
@@ -67,6 +65,8 @@ The MCP client inside Copilot connects over HTTPS and discovers tools exposed by
 ### Azure AI Foundry Agent Service
 
 Register the remote MCP endpoint as a tool for your agent. You can pass headers for authentication and catalog the tool with API Center if needed.
+<img width="952" height="357" alt="image" src="https://github.com/user-attachments/assets/7804b93f-1494-4a98-84ea-d4edcef59e60" />
+
 
 ## 6. Security and networking
 
