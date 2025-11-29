@@ -88,9 +88,6 @@ fabric-custom-remote-mcp/
 ├─ requirements.txt     Python dependencies for MCP, Azure auth, and REST clients
 ├─ host.json            Functions configuration for the MCP endpoint and handler
 ├─ infra/               Infrastructure as code for Functions, Storage Private Endpoint, Key Vault, and networking
-└─ docs/
-   └─ diagrams/
-       └─ fabricops-remote-mcp.png   your diagram asset
 ```
 
 ## 9. Example prompts for agents
