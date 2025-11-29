@@ -13,7 +13,7 @@ Project goal: expose Microsoft Fabric and Power BI operations to AI agents throu
 
 ## 2. Data architecture summary
 
-<img width="489" height="254" alt="image" src="https://github.com/user-attachments/assets/bdf290ad-498d-4cf4-aa8a-51f65a87eb02" />
+<img width="1222.5" height="635" alt="image" src="https://github.com/user-attachments/assets/bdf290ad-498d-4cf4-aa8a-51f65a87eb02" />
 
 Connections to annotate in the diagram:
 
