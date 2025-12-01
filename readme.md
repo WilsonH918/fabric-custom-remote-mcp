@@ -12,8 +12,7 @@ Project goal: expose Microsoft Fabric and Power BI operations to AI agents throu
 * Targets Fabric and Power BI: tools call Fabric and Power BI REST APIs for workspace lifecycle, item metadata, semantic model discovery, and DAX execution.
 
 ## 2. Data architecture summary
-
-<img width="1460" height="710" alt="image" src="https://github.com/user-attachments/assets/c77e75cd-a298-4063-9bb9-aff88e2414e5" />
+<img width="1460" height="710" alt="image" src="https://github.com/user-attachments/assets/99179c95-a622-4038-a7ef-da4af8867e75" />
 
 * MCP Host to Function App MCP endpoint: HTTPS MCP JSON RPC. Endpoint `/runtime/webhooks/mcp` or `/runtime/webhooks/mcp/sse`. Authentication Entra ID or a system key.
 * Function App MCP server to Fabric and Power BI: HTTPS REST OAuth Bearer. Methods GET POST PUT PATCH DELETE. Use On Behalf Of or a service principal.
